@@ -20,6 +20,7 @@ function App() {
       {/* <Props stock = "Apple" price={price}/> */}
       {/* <LiftingStateUp getData = {gettingdatafrmChild}/> */}
       <LearnUsestate />
+      
     </>
   )
 }
