@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const LearnUsestate = () => {
 
@@ -12,6 +12,24 @@ const LearnUsestate = () => {
     const changeStockPrice = () =>{
       setStockPrice({...stockprice, price: "200"})
     }
+
+    useEffect(()=>{
+      // logic goes here
+      console.log("UseEffect is called")
+      console.log("Effect is called -->> count =", count)
+
+      const id = setTimeout(() => {
+        console.log("Delayed task after 3 seconds")
+      }, 3000)
+
+      //cleanup function 
+      return () => {
+        
+        console.log("Cleanup function is called -->> previous count was", count)
+
+        clearTimeout(id)
+      }
+    }, [count])
 
   return (
     <>
