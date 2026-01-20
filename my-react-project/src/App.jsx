@@ -1,6 +1,7 @@
 import Props from "./components/props"
 import LiftingStateUp from "./components/liftingstateUp"
 import LearnUsestate from "./components/LearnuseState"
+import LearnuseMemo from "./components/LearnuseMemo"
 
 
 
@@ -19,7 +20,8 @@ function App() {
       
       {/* <Props stock = "Apple" price={price}/> */}
       {/* <LiftingStateUp getData = {gettingdatafrmChild}/> */}
-      <LearnUsestate />
+      {/* <LearnUsestate /> */}
+      <LearnuseMemo/>
       
     </>
   )
