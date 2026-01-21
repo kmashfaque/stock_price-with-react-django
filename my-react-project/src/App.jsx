@@ -4,6 +4,7 @@ import LearnUsestate from "./components/LearnuseState"
 import LearnuseMemo from "./components/LearnuseMemo"
 import ChildA from "./components/ChildA"
 import { createContext, useState } from "react"
+import LearnuseRef from "./components/LearnuseRef"
 
 
 
@@ -34,12 +35,14 @@ function App() {
       {/* <LiftingStateUp getData = {gettingdatafrmChild}/> */}
       {/* <LearnUsestate /> */}
       {/* <LearnuseMemo/> */}
-      <StockContext.Provider value = {{stock, price}}>
+      {/* <StockContext.Provider value = {{stock, price}}>
         <UserContext.Provider value ={{user, setUser}}>
           <ChildA/>
         </UserContext.Provider>
       </StockContext.Provider>
-      
+      */}
+
+      <LearnuseRef/>
     </>
   )
 }
