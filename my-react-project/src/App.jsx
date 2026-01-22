@@ -7,6 +7,7 @@ import { createContext, useState } from "react"
 import LearnuseRef from "./components/LearnuseRef"
 import LearnCustomHook from "./components/LearnCustomHook"
 import NewUseEffect from "./components/NewUseEffect"
+import LearnForm from "./components/LearnForm"
 
 
 
@@ -47,7 +48,8 @@ function App() {
       {/* <LearnuseRef/> */}
 
       {/* <LearnCustomHook/> */}
-      <NewUseEffect/>
+      {/* <NewUseEffect/> */}
+      <LearnForm/>
     </>
   )
 }
