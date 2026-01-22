@@ -6,6 +6,7 @@ import ChildA from "./components/ChildA"
 import { createContext, useState } from "react"
 import LearnuseRef from "./components/LearnuseRef"
 import LearnCustomHook from "./components/LearnCustomHook"
+import NewUseEffect from "./components/NewUseEffect"
 
 
 
@@ -45,7 +46,8 @@ function App() {
 
       {/* <LearnuseRef/> */}
 
-      <LearnCustomHook/>
+      {/* <LearnCustomHook/> */}
+      <NewUseEffect/>
     </>
   )
 }
